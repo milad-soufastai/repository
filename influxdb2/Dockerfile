@@ -49,13 +49,13 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Jay Antoney <jayantoney@gmail.com>" \
+    maintainer="Mils S <mils129@gmail.com>" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
-    org.opencontainers.image.vendor="Jays Home Assistant Add-ons" \
-    org.opencontainers.image.authors="Jay Antoney <jayantoney@gmail.com>" \
+    org.opencontainers.image.vendor="Mils Home Assistant Add-ons" \
+    org.opencontainers.image.authors="Milad Soufastai <mils129@gmail.com>" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://github.com/Jays-Home-Assistant-Add-ons" \
+    org.opencontainers.image.url="https://github.com/milad-soufastai/repository" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
