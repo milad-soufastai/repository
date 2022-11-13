@@ -1,3 +1,6 @@
+# This is a personal fork of the influxdb2 add-on. All credit to Jay's Home Assistant Add-ons. Just wanted a personal update
+
+
 # Jay's Home Assistant Add-ons
 
 ![Project Stage][project-stage-shield]
