@@ -1,0 +1,36 @@
+---
+name: Speedtest
+version: 1.0.0
+slug: speedtest2
+description: Test internet speeds. Running InfluxDB v2.x.
+url: https://github.com/milad-soufastai/Speedtest-for-InfluxDB-and-Grafana
+panel_icon: mdi:chart-areaspline
+startup: services
+homeassistant: 0.92.0b2
+hassio_api: true
+arch:
+  - aarch64
+  - amd64
+init: false
+map:
+  - share:rw
+  - ssl
+ports:
+  8086/tcp: 8086
+ports_description:
+  8086/tcp: InfluxDB server
+options:
+  reporting: true
+  ssl: false
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+  envvars: []
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  reporting: bool
+  ssl: bool
+  certfile: str
+  keyfile: str
+  envvars:
+    - name: match(^INFLUXD_([A-Z0-9_])+$)
+      value: str
